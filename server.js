@@ -29,7 +29,7 @@ const { Pool } = require('pg');
 const cors     = require('cors');
 
 const app  = express();
-const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+const pool = new Pool({ connectionString: process.env.POSTGRES_URI });
 
 // ── Middleware ────────────────────────────────────────────────────────────────
 
